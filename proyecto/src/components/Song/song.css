@@ -1,0 +1,16 @@
+.more{
+    color: blue;
+}
+
+.more:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}

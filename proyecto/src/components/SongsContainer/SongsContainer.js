@@ -6,7 +6,9 @@ export default class SongsContainer extends Component{
     constructor(props){
         super(props);
         this.state= {
-            songs: []
+            songs: [],
+            // clase: 'hide',
+            // message: 'Ver más'
         }
     }
     
@@ -22,12 +24,27 @@ export default class SongsContainer extends Component{
         })
         .catch(error => console.log(error))
     }
+
+    // Función para remover una canción
+
+    deleteSong(title){
+        console.log(title);
+
+        const filteredSongs = this.state.songs.filter(song => song.title !== title)
+
+        this.setState({
+            songs: filteredSongs
+        })
+    }
     
     render(){
         console.log(this.state.songs);
         return(
             <div>
-                {this.state.songs.map((song, index) => {
+                {this.state.songs == [] ?
+                <h4>Cargando canciones...</h4> :
+                
+                this.state.songs.map((song, index) => {
                      return <Song key = {index}
                     id = {song.id}
                     title = {song.title}
@@ -35,6 +52,8 @@ export default class SongsContainer extends Component{
                     image = {song.album.cover}
                     album = {song.album.title}
                     duration = {song.duration}
+                    deleteSong= {(title) => this.deleteSong(title)}
+                    
                     >
                     </Song>
 
