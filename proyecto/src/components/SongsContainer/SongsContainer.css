@@ -1,7 +1,10 @@
 .songsContainer {
-    background-color: aqua;
-    width: 95%;
-    display: grid;
-    grid-template-columns: 30% 30% 30%; 
-    gap: 20px
+    background-color: black;
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* grid-template-columns: 30% 30% 30%;  */
+    /* gap: 20px */
 }

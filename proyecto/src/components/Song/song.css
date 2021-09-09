@@ -1,5 +1,6 @@
 .more{
-    color: blue;
+    color:black;
+    padding-left: 5%;
 }
 
 .more:hover{
@@ -18,7 +19,8 @@
 .song{
     background-color: #F7F6FF;
     border-radius: 20px;
-    width: 80%;
+    width: 15%;
+    margin: 20px;
 }
 
 h3{

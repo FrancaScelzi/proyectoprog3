@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 200px;
+    
+
+}
+
+.logo{
+    width: 90px;
+    margin: 30px;
+}
