@@ -27,16 +27,16 @@ export default class Song extends Component{
 
     render(){
         return(
-            <div>
-               <h3>{this.props.title}</h3>
-               <img src={this.props.image}/>
-               <h4>Artista: {this.props.artist}</h4>
-               {/* <p>Álbum: {this.props.album}</p> */}
-               {/* <p>Duración: {this.props.duration} segundos</p> */}
-               <button onClick={()=> this.props.deleteSong(this.props.title)}>Eliminar canción</button>
-               <p className= 'more' onClick= {()=> this.handleShow()}>{this.state.message}</p>
-               <p className= {this.state.clase}>Álbum: {this.props.album}</p>
-               <p className= {this.state.clase}>Duración: {this.props.duration} segundos</p>
+            <div className='song' >
+                <button onClick={()=> this.props.deleteSong(this.props.title)}> <i class="fas fa-times"></i></button>
+                <h3>{this.props.title}</h3>
+                <img src={this.props.image}/>
+                <h4>{this.props.artist}</h4>
+                {/* <p>Álbum: {this.props.album}</p> */}
+                {/* <p>Duración: {this.props.duration} segundos</p> */}
+                <p className= 'more' onClick= {()=> this.handleShow()}>{this.state.message}</p>
+                <p className= {this.state.clase}>Álbum: {this.props.album}</p>
+                <p className= {this.state.clase}>Duración: {this.props.duration} segundos</p>
             </div>
         )
     }

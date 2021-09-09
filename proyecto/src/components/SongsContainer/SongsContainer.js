@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Song from '../Song/Song';
+import './SongsContainer.css'
+
 
 
 export default class SongsContainer extends Component{
@@ -14,7 +16,7 @@ export default class SongsContainer extends Component{
     
     // LLamado a la API
     componentDidMount(){
-        fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks')
+        fetch('https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/0/tracks')
         .then (response => response.json())
         .then (data => {
             // console.log(data.data);
@@ -40,7 +42,7 @@ export default class SongsContainer extends Component{
     render(){
         console.log(this.state.songs);
         return(
-            <div>
+            <div className= 'songsContainer' >
                 {this.state.songs == [] ?
                 <h4>Cargando canciones...</h4> :
                 

@@ -1,0 +1,7 @@
+.songsContainer {
+    background-color: aqua;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%; 
+    gap: 20px
+}
