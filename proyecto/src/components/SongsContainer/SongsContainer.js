@@ -63,12 +63,12 @@ export default class SongsContainer extends Component{
 
     // Funcion para filtrar las canciones
 
-    searchSongs(title) {
+    searchSongs(artist) {
         const filteredSongs = this.state.songs.filter(
-            song => song.title.toUpperCase().includes(title.toUpperCase())
+            song => song.artist.name.toUpperCase().includes(artist.toUpperCase())
         );
 
-        if (title === ""){
+        if (artist === ""){
             this.setState({
                 filteredSongs: this.state.songs
             })

@@ -17,8 +17,9 @@ export default class Search extends Component {
     render(){
         return(
             <form className="searchContainer" onSubmit={(evento)=> this.prevenirSubmit(evento)}>
-                <input onChange={(evento)=> this.onChange(evento) } type="text"/>
-                <input type= "submit"/>
+                <input placeholder="Search"onChange={(evento)=> this.onChange(evento) } type="text"/>
+                <a type= "submit" className="search-btn"> <i class="fas fa-search"></i></a>
+                
             </form>
         )
     }
