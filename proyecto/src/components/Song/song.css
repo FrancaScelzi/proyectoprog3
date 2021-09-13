@@ -1,46 +1,68 @@
-.more{
-    color:black;
-    padding-left: 5%;
-}
-
-.more:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.hide{
-    display: none;
-}
-
-.show{
-    display: block;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 .song{
-    background-color: #F7F6FF;
-    border-radius: 20px;
-    width: 15%;
-    margin: 20px;
+    width: 20%;
+    margin: 5px;
+    transition: all .2s ease-in-out;
 }
 
-h3{
-    font-size: 20px;
-    padding-left: 5%;
-
+.song:hover{
+    transform: scale(1.05);
 }
-h4{
-    padding-left: 5%;
+
+button{
+    margin-left: 90%;
+    margin-top: 2%;
+    border-radius: 30px;
+    text-decoration: none;
+    border:0px solid;
+    background-color: #e0fc00;
+}
+
+button:hover{
+    opacity: 50%;
+    cursor: pointer;
 }
 
 img{
     width: 100%;
+    border-radius: 180px;
 }
 
-button{
-    margin-top: 20px;
-    margin-left: 90%;
-    padding: 5px;
-    border-radius: 30px;
-    text-decoration: none;
-    border:0px solid;
+h4{
+    font-family: "Montserrat";
+    color: #e0fc00;
+    font-size: 20px;
+    margin-bottom: 0%;
 }
+
+.more{
+    color:#e0fc00;
+    font-family: "Montserrat";
+    font-size: 16px;
+    margin-top: 3%;
+}
+
+.more:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.show{
+    display: block;
+    color: #e0fc00;
+    font-size: 14px;
+}
+
+.hide{
+    display: none;
+    color: #e0fc00;
+}
+
+
+
+
+
+
+
+

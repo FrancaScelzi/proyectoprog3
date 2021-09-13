@@ -12,10 +12,8 @@ export default class Footer extends Component {
     render(){
         return(
             <div className= 'footer'>
-                
                 <p className='info'>Florencia Villaverde | Franca Scelzi | Valentina Iglesias Vinyolas</p>
-                <p className= 'info'>Copyright Kessey 2021. Todos los derechos reservados® </p>
-
+                <p className= 'info'>Copyright Kessey 2021. Todos los derechos reservados ©</p>
             </div>
         )
     }
