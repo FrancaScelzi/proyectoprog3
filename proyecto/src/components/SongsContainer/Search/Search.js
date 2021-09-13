@@ -16,10 +16,11 @@ export default class Search extends Component {
 
     render(){
         return(
-            <form className="searchContainer" onSubmit={(evento)=> this.prevenirSubmit(evento)}>
-                <input placeholder="Search"onChange={(evento)=> this.onChange(evento) } type="text"/>
-                <a type= "submit" className="search-btn"> <i class="fas fa-search"></i></a>
-                
+            <form onSubmit={(evento)=> this.prevenirSubmit(evento)}>
+                <input className="inputSearch" onChange={(evento)=> this.onChange(evento) } placeholder= "Buscar canciones ..." type="text"/>
+                <a type= "submit" className= "lupita">
+                    <i class="fas fa-search" ></i>
+                </a>
             </form>
         )
     }

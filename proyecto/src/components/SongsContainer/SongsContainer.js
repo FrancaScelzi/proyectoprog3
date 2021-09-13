@@ -88,16 +88,15 @@ export default class SongsContainer extends Component{
                 </div>
             
                 <div className= 'songsContainer' >
-                    <button onClick={()=> this.addSongs()}>Agregar canciones</button>
             
                     {this.state.songs.length == 0 ?
                     <h4>Cargando canciones...</h4> :
                     
-                        <>
+                    <>
 
                             {
-                            this.state.filteredSongs.length == 0 ?
-                            <h4>No hay datos que coincidan con su búsqueda</h4> : 
+                                this.state.filteredSongs.length == 0 ?
+                                <h4>No hay datos que coincidan con su búsqueda</h4> : 
                             this.state.filteredSongs.map((song, index) => {
                                 return <Song key = {index}
                             id = {song.id}
@@ -115,7 +114,11 @@ export default class SongsContainer extends Component{
                     
                         </>   }
                 </div>
-
+            
+            <div className="buttonContainer" >
+            <button className="addButton" onClick={()=> this.addSongs()}>Agregar canciones</button>
+            </div>
+            
             </div>           
         )
     }

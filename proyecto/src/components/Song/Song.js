@@ -28,7 +28,7 @@ export default class Song extends Component{
     render(){
         return(
             <div className='song' >
-                <button onClick={()=> this.props.deleteSong(this.props.title)}> <i class="fas fa-times"></i></button>
+                <button className= "deleteButton" onClick={()=> this.props.deleteSong(this.props.title)}> <i class="fas fa-times"></i></button>
                 <img src={this.props.image}/>
                 <h4><b>{this.props.artist}</b></h4>        
                 <p className= 'more' onClick= {()=> this.handleShow()}>{this.state.message}</p>

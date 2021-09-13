@@ -1,10 +1,35 @@
 .songsContainer {
     background-color: black;
-    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    /* grid-template-columns: 30% 30% 30%;  */
-    /* gap: 20px */
+    justify-content: center;
+    width: 100%;
+}
+
+.buttonContainer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.addButton{
+    background-color: #e0fc00;
+    width: 40%;
+    height: 40px;
+    border-radius: none;
+    font-family: "Montserrat";
+    border: none;
+    transition: all .2s ease-in-out;
+    margin-top: 50px;
+    font-weight: bold;
+    
+
+}
+
+.addButton:hover{
+    opacity: 50%;
+    cursor: pointer;
+    transform: scale(1.05);
 }
