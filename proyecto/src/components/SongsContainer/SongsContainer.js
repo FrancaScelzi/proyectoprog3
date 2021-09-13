@@ -10,9 +10,8 @@ export default class SongsContainer extends Component{
         super(props);
         this.state = {
             songs: [],
-            filteredSongs: []
-            // clase: 'hide',
-            // message: 'Ver más'
+            filteredSongs: [],
+            index: 10
         }
     }
     
@@ -38,8 +37,29 @@ export default class SongsContainer extends Component{
         this.setState({
             songs: filteredSongs,
             filteredSongs: filteredSongs // Se actualiza filteredSongs porque son las canciones a mostrar
+
         })
     }
+
+    // Función para agregar canciones
+
+    addSongs(){
+        fetch(`https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/0/tracks&index=${this.state.index}&limit=10`)
+        .then (response => response.json())
+        .then (data => {
+            let arrayPrevio = this.state.songs;
+            let arrayActualizado = arrayPrevio.concat(data.data);
+            let indexActualizado = this.state.index + 10;
+            console.log(indexActualizado);
+
+            this.setState({
+                songs: arrayActualizado,
+                filteredSongs: arrayActualizado,
+                index: indexActualizado
+            })
+
+    })
+}
 
     // Funcion para filtrar las canciones
 
@@ -68,6 +88,7 @@ export default class SongsContainer extends Component{
                 </div>
             
                 <div className= 'songsContainer' >
+                    <button onClick={()=> this.addSongs()}>Agregar canciones</button>
             
                     {this.state.songs.length == 0 ?
                     <h4>Cargando canciones...</h4> :
