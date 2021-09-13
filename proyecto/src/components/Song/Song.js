@@ -30,8 +30,9 @@ export default class Song extends Component{
             <div className='song' >
                 <button className= "deleteButton" onClick={()=> this.props.deleteSong(this.props.title)}> <i class="fas fa-times"></i></button>
                 <img src={this.props.image}/>
-                <h4><b>{this.props.artist}</b></h4>        
+                <h4><b>{this.props.title}</b></h4>        
                 <p className= 'more' onClick= {()=> this.handleShow()}>{this.state.message}</p>
+                <p className= {this.state.clase}><b> Artista: </b> {this.props.artist}</p>
                 <p className= {this.state.clase}> <b> Álbum:</b> {this.props.album} </p>
                 <p className= {this.state.clase}><b> Duración: </b> {this.props.duration} segundos</p>
             </div>

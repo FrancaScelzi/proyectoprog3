@@ -63,12 +63,12 @@ export default class SongsContainer extends Component{
 
     // Funcion para filtrar las canciones
 
-    searchSongs(artist) {
+    searchSongs(title) {
         const filteredSongs = this.state.songs.filter(
-            song => song.artist.name.toUpperCase().includes(artist.toUpperCase())
+            song => song.title.toUpperCase().includes(title.toUpperCase())
         );
 
-        if (artist === ""){
+        if (title === ""){
             this.setState({
                 filteredSongs: this.state.songs
             })
@@ -102,7 +102,7 @@ export default class SongsContainer extends Component{
                             id = {song.id}
                             title = {song.title}
                             artist = {song.artist.name}
-                            image = {song.album.cover}
+                            image = {song.artist.picture_medium}
                             album = {song.album.title}
                             duration = {song.duration}
                             deleteSong= {(title) => this.deleteSong(title)}
