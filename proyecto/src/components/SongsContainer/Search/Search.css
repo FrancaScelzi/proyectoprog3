@@ -24,8 +24,6 @@ form:hover{
     border-bottom: 2px solid;
 }
 
-
-
 textarea:focus, input:focus{
     outline: none;
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './song.css'
-// import { render } from 'react-dom';
 
 export default class Song extends Component{
     constructor(props){
