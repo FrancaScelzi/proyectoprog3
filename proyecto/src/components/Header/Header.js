@@ -12,7 +12,7 @@ export default class Header extends Component {
     render(){
         return(
             <div className= 'header'>
-                <img className='logo' src={"../images/Logo.png"} />
+                <img className='logo' src={"../images/Logo2.jpg"} />
             </div>
         )
     }

@@ -16,11 +16,28 @@
     width: 100%;
 }
 
+.orientationBtn{
+    background-color:#e0fc00;
+    width: 40%;
+    height: 40px;
+    font-family: "Montserrat";
+    border: none;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.orientationBtn:hover{
+    opacity: 50%;
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
 .buttonContainer{
     background-color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -29,35 +46,14 @@
     background-color: #e0fc00;
     width: 40%;
     height: 40px;
-    border-radius: none;
     font-family: "Montserrat";
     border: none;
     transition: all .2s ease-in-out;
     margin-top: 50px;
     font-weight: bold;
-    
-
 }
 
 .addButton:hover{
-    opacity: 50%;
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-.orientationBtn{
-    background-color:#e0fc00;
-    width: 30%;
-    height: 30px;
-    font-family: "Montserrat";
-    border-radius: none;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    transition: all .2s ease-in-out;
-}
-
-.orientationBtn:hover{
     opacity: 50%;
     cursor: pointer;
     transform: scale(1.05);

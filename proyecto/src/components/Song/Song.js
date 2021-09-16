@@ -29,7 +29,7 @@ export default class Song extends Component{
         return(
             <div className={`song-${this.props.orientation}`} >
                 <button className= "deleteButton" onClick={()=> this.props.deleteSong(this.props.title)}> <i class="fas fa-times"></i></button>
-                <img src={this.props.image}/>
+                <img className="imgSong" src={this.props.image}/>
                 <h4><b>{this.props.title}</b></h4>        
                 <p className= 'more' onClick= {()=> this.handleShow()}>{this.state.message}</p>
                 <p className= {this.state.clase}><b> Artista: </b> {this.props.artist}</p>

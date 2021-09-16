@@ -2,14 +2,14 @@
 
 .header{
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: black;
-    height: 150px;
+    height: 20%;
     font-family: "Montserrat";
 }
 
 .logo{
-    width: 90px;
+    width: 250px;
     margin: 30px;
 }
