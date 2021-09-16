@@ -11,7 +11,8 @@ export default class SongsContainer extends Component{
         this.state = {
             songs: [],
             filteredSongs: [],
-            index: 10
+            index: 10,
+            orientation: 'row'
         }
     }
     
@@ -79,6 +80,21 @@ export default class SongsContainer extends Component{
         } 
     }
     
+    changeOrientation(){
+
+        if(this.state.orientation == 'row'){
+            this.setState({
+                orientation: 'column'
+            })
+        } else{
+            this.setState({
+                orientation: 'row'
+            })
+        }
+
+
+    }
+
     render(){
         console.log(this.state.songs);
         return(
@@ -86,8 +102,12 @@ export default class SongsContainer extends Component{
                 <div>
                     <Search searchSongs = {(title) => this.searchSongs(title)}/>
                 </div>
+
+                <div className='buttonContainer'>    
+                    <button className='orientationBtn'onClick={()=> this.changeOrientation()}>Cambiar orientación</button>
+                </div>
             
-                <div className= 'songsContainer' >
+                <div className= {`songsContainer-${this.state.orientation}`} >
             
                     {this.state.songs.length == 0 ?
                     <h4>Cargando canciones...</h4> :
@@ -106,6 +126,7 @@ export default class SongsContainer extends Component{
                             album = {song.album.title}
                             duration = {song.duration}
                             deleteSong= {(title) => this.deleteSong(title)}
+                            orientation={this.state.orientation}
                             
                             >
                             </Song>

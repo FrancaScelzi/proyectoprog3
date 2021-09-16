@@ -3,13 +3,15 @@ import SongsContainer from './components/SongsContainer/SongsContainer';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Search from './components/SongsContainer/Search/Search'
+import Carrousel from './components/Carrousel/Carrousel';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-     <SongsContainer/>
-     <Footer/>
+      {/* <Carrousel/> */}
+      <SongsContainer/>
+      <Footer/>
     </div>
   );
 }

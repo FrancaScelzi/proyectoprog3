@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-.song{
+.song-row{
     width: 15%;
     padding: 3%;
-    margin: 5px;
+    justify-content: space-between;
+    margin: 10px;
     transition: all .2s ease-in-out;
+    background-color:#141414;
+    border-radius: 5%;
 }
 
-.song:hover{
+.song-column{
+    width: 15%;
+    padding: 3%;
+    margin: 10px;
+    transition: all .2s ease-in-out;
+    background-color:#141414;
+    border-radius: 5%;
+
+}
+
+
+
+.song-row:hover,.song-column:hover{
     transform: scale(1.05);
 }
 
