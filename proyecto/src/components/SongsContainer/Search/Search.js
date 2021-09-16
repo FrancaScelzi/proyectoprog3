@@ -18,9 +18,9 @@ export default class Search extends Component {
         return(
             <form onSubmit={(evento)=> this.prevenirSubmit(evento)}>
                 <input className="inputSearch" onChange={(evento)=> this.onChange(evento) } placeholder= "Buscar canciones ..." type="text"/>
-                <a type= "submit" className= "lupita">
+                {/* <a type= "submit" className="lupita">
                     <i class="fas fa-search" ></i>
-                </a>
+                </a> */}
             </form>
         )
     }

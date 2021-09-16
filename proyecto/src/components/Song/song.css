@@ -2,7 +2,7 @@
 
 .song-row{
     width: 15%;
-    padding: 3%;
+    padding: 1%;
     justify-content: space-between;
     margin: 10px;
     transition: all .2s ease-in-out;
@@ -12,14 +12,12 @@
 
 .song-column{
     width: 15%;
-    padding: 3%;
+    padding: 1%;
     margin: 10px;
     transition: all .2s ease-in-out;
     background-color:#141414;
     border-radius: 5%;
 }
-
-
 
 .song-row:hover,.song-column:hover{
     transform: scale(1.05);
@@ -48,6 +46,7 @@ h4{
     font-family: "Montserrat";
     color: #e0fc00;
     font-size: 20px;
+    margin-top: 15px;
     margin-bottom: 0%;
 }
 
@@ -55,7 +54,7 @@ h4{
     color:#e0fc00;
     font-family: "Montserrat";
     font-size: 16px;
-    margin-top: 3%;
+    margin-top: 10px;
 }
 
 .more:hover{

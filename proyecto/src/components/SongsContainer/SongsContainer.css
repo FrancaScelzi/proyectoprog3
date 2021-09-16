@@ -16,14 +16,22 @@
     width: 100%;
 }
 
+.buttonContainer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    flex-wrap: wrap;
+}
 .orientationBtn{
     background-color:#e0fc00;
     width: 40%;
-    height: 40px;
+    height: 35px;
     font-family: "Montserrat";
     border: none;
     font-weight: bold;
-    margin-bottom: 30px;
     transition: all .2s ease-in-out;
 }
 
@@ -33,24 +41,14 @@
     transform: scale(1.05);
 }
 
-.buttonContainer{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
 .addButton{
     background-color: #e0fc00;
     width: 40%;
-    height: 40px;
+    height: 35px;
     font-family: "Montserrat";
     border: none;
-    transition: all .2s ease-in-out;
-    margin-top: 50px;
     font-weight: bold;
+    transition: all .2s ease-in-out;
 }
 
 .addButton:hover{
