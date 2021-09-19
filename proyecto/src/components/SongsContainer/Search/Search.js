@@ -11,7 +11,7 @@ export default class Search extends Component {
     }
 
     onChange(evento){
-        this.props.searchSongs(evento.target.value)   
+        this.props.searchSongs(evento.target.value) //envia titulo cancion al songsContainer 
     }
 
     render(){
