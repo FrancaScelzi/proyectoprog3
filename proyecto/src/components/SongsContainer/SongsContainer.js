@@ -55,14 +55,15 @@ export default class SongsContainer extends Component{
 
 // Funcion para filtrar las canciones
     searchSongs(title) {
-        const filteredSongs = this.state.songs.filter(
-            song => song.title.toUpperCase().includes(title.toUpperCase())
-        );
         if (title === ""){
             this.setState({
                 filteredSongs: this.state.songs
             })
         } else {
+            const filteredSongs = this.state.songs.filter(
+                song => song.title.toUpperCase().includes(title.toUpperCase())
+            );
+            
             this.setState({
                 filteredSongs: filteredSongs
             })
@@ -98,7 +99,7 @@ export default class SongsContainer extends Component{
                     {this.state.songs.length == 0 ?
                     <h4>Cargando canciones...</h4> :
                     <>
-                            {
+                        {
                             this.state.filteredSongs.length == 0 ?
                             <h4>No hay datos que coincidan con su búsqueda</h4> : 
                             this.state.filteredSongs.map((song, index) => {
@@ -112,8 +113,9 @@ export default class SongsContainer extends Component{
                                 deleteSong= {(title) => this.deleteSong(title)}
                                 orientation={this.state.orientation}>
                             </Song>
-                            })}
-                        </> }
+                            })
+                        }
+                    </> }
                 </div>
             
                 <div className="buttonContainer" >
