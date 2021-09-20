@@ -51,6 +51,7 @@ export default class SongsContainer extends Component{
                 index: indexActualizado
             })
     })
+    .catch(error => console.log(error))
     }
 
 // Funcion para filtrar las canciones
