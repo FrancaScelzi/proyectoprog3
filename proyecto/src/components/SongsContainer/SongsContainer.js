@@ -16,7 +16,7 @@ export default class SongsContainer extends Component{
     
 // LLamado a la API
     componentDidMount(){
-        fetch('https://thingproxy.freeboard.io/fetch/https://api.deezer.com/chart/0/tracks')
+        fetch('https://thingproxy.freeboard.io/fetch/https://api.deezer.1com/chart/0/tracks')
         .then (response => response.json())
         .then (data => {
             this.setState({
